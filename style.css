@@ -33,30 +33,30 @@ button {
   font-family: Lato, sans-serif;
 }
 
-.aaa {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.aaa img {
+.header__img {
   width: 100%;
 }
 
-.aaa .more_inf {
+.header__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
 
-.aaa {
+.header {
   text-align: center;
 }
 
 }
 
-.centered-main-page-element {
+.todo-list {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -73,10 +73,6 @@ button {
   padding-left: 10px;
   font-size: 18px;
   width: 226px;
-}
-
-.task-row-wrapper {
-  display: flex;
 }
 
 .btn {
@@ -130,6 +126,10 @@ button {
   margin: 0 0 20px;
 }
 
+.form__content {
+  display: flex;
+}
+
 .form__task {
   display: inline-block;
   width: 318px;
@@ -151,13 +151,13 @@ button {
   margin: 0 10px;
 }
 
-.btn_close img {
+.btn__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.btn_close img:hover {
+.btn__img:hover {
   transform: rotateZ(0);
 }
 
