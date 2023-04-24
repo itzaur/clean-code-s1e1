@@ -25,6 +25,16 @@ button {
 }
 
 /*
+* Header font
+*/
+@font-face {
+  font-family: "Papyrus";
+  src: url("/font/1papyrus.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*
 * Basic Style
 */
 .page {
@@ -45,7 +55,10 @@ button {
 }
 
 .header__link {
-  font-family: fantasy, cursive;
+  font-family: "Papyrus", fantasy, cursive;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+  color: #4c2386;
 }
 
 @media (max-width: 768px) {
