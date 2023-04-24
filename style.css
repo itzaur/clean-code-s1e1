@@ -45,6 +45,7 @@ button {
 
 .header {
   width: 500px;
+  max-width: 100%;
   margin: 0 auto;
   display: block;
   text-align: right;
@@ -61,25 +62,20 @@ button {
   color: #4c2386;
 }
 
-@media (max-width: 768px) {
-
-.header {
-  text-align: center;
-}
-
-}
-
 .todo-list {
   display: block;
   width: 500px;
+  max-width: 100%;
   margin: 0 auto 0;
 }
 
 .task,
 .task-title {
   width: 56%;
+  min-width: 50%;
   display: inline-block;
   flex-grow: 1;
+  overflow: hidden;
 }
 
 .task-title {
@@ -154,6 +150,7 @@ button {
 .form__task {
   display: inline-block;
   width: 318px;
+  min-width: 50%;
 }
 
 /* Task list */
@@ -191,8 +188,21 @@ button {
 .edit-mode .task {
   display: inline-block;
   width: 224px;
+  min-width: 50%;
 }
 
 .edit-mode .task-title {
   display: none;
+}
+
+@media (max-width: 768px) {
+
+.header {
+  text-align: center;
+}
+
+.form {
+  margin-block: 0;
+}
+
 }
